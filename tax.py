@@ -1,5 +1,5 @@
-totalIncome = int(input("Your Income: "))
-saving = int(input("Your saving: "))
+totalIncome = float(input("Your Income: "))
+saving = float(input("Your saving: "))
 taxIncome = totalIncome - saving
 taxIn = totalIncome - 150
 
