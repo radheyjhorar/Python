@@ -1,12 +1,15 @@
 # a = int(input("Enter a Number: "))
-# b = a % 10
-# c = a / 10
-# print("Sum =",b + c)
-# print("reverse =",b,c)
-
+# b = 0
+# c = 0
+# while a > 0:
+#     b = a % 10
+#     c += b
+#     a //= 10
+# print(c)
 
 num = int(input("Enter a Number: "))
+num1 = num
 s = 0
-for i in str(num):
-    s += int(i)
-print(s)
+for d in str(num):
+    s += int(d)
+print(s) 
