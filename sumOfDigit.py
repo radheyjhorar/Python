@@ -18,11 +18,12 @@
 
 
 
-num = 123
-num1 = num
-s = 0
-for i in len(str(num)):
-    digit = num1 % 10
-    s += digit
-    num1 //= 10
-print(s)
+def getSum(n):
+    
+    sum = 0
+    for digit in str(n): 
+      sum += int(digit)      
+    return sum
+   
+n = int(input("Enter a number: "))
+print(getSum(n))
