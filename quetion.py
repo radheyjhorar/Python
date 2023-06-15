@@ -1,6 +1,6 @@
 # count lowercase later and uppercase later
-# upperLower = "Hello World"
-# print(ord(upperLower))
+    # upperLower = "Hello World"
+    # print(ord(upperLower))
 
 
 
@@ -63,4 +63,18 @@ li.sort()
 print("Lowest Number = ", li[0])
 print("Largest Number = ", li[-1])
 
-    
+
+
+# Input two string print concatnet both string
+
+
+
+
+# input a string print one by one charcter reverse
+
+
+
+
+
+# input two string and find a subString
+
