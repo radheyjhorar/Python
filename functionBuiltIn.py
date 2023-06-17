@@ -36,10 +36,13 @@
     # List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
     # New List Name = [Expresion for i in list if condition]
     # nList = [1*1 for i in l1 if i % 2 == 0]
+l1 = [12, 21, 1, 11, 2, 22]
+
 
 
 # List Slice 
     # List[start:end:step]
+l1[21: 1: 1]
     
     
 # Nested list
