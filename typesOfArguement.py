@@ -38,4 +38,4 @@ def add(*numbers):  # its creat a tupel
         d += i
     print("Sum is " + str(d))
 add(5,7,6,9)
-add(5,7,6,9,66,244, 10)
+add(5, 7, 6, 9, 66, 244, 10)
