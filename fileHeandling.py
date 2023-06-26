@@ -37,19 +37,19 @@
 # f1.close()
 
 # FILE WRITE WITH LOOP
-f = open("demofile.txt", "a")
-while True:
-    str = input("Enter string: ")
-    f.write("\n" + str)
-    print("for continue press -y- for close press -c-")
-    inp = input("Y OR C: ")
-    if inp != "y":
-        break
-f.close()
+# f = open("demofile.txt", "a")
+# while True:
+#     str = input("Enter string: ")
+#     f.write("\n" + str)
+#     print("for continue press -y- for close press -c-")
+#     inp = input("Y OR C: ")
+#     if inp != "y":
+#         break
+# f.close()
 
 # AFTER WRITE READ THE FILE
-f = open("demofile.txt", "r")
-print(f.read())
+# f = open("demofile.txt", "r")
+# print(f.read())
 
 
 
@@ -65,4 +65,36 @@ print(f.read())
 # f1.close()
 
 
+# writelines(seq of lines)
+# list = ["Hello world \n", "How are you \n", "My name is Radhey Jhorar \n", "can i know your name"]
+# f = open("demofile1.txt", "a")
+# f.writelines(list)
+# f.close()
 
+# # After writelines read file
+# f = open("demofile1.txt", "r")
+# print(f.read())
+# f.close()
+
+
+# with open file
+# with open("demofile1.txt", "r") as f:
+#     readf = f.read()
+#     print(readf)
+# no need to close file in "with open clouse"
+
+
+# if we open file for write/read "w/r" and file not exists then file automatice created:
+with open("test.txt", "w") as f:
+    f.write("Hello world this is created automatice new file")
+# print after write its file relative path
+with open("test.txt", "r") as f:
+    readf = f.read()
+    print(readf)
+    print("is file closed = ", f.closed)
+print("is file closed = ", f.closed)
+
+# absolute path 
+with open("D:\Python\Python\demofile.txt","r") as df:
+    readd = df.read()
+    print(readd)
