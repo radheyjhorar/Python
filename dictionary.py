@@ -12,8 +12,8 @@ a = { "Name" : "Radhey",
      }
 print(a["Subject"])
 
-for i,j in a:
-    print(i, j)
+for i in a:
+    print(i)
     
 a["Subject"] = "Math"
 print(a)
