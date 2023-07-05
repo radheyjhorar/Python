@@ -1,37 +1,47 @@
 # # Input two str print concatnet both str
-# l1 = "Hello"
-# l2 = "World"
-# l3 = l1 + " " + l2
-# print(l3)
-
-# # input a string print one by one charcter reverse
-# str = "Hello World"
-# print(str[::-1])
-
-# rStr = []
-# l = len(str) - 1
-# while l >= 0:
-#     rStr.append(str[l])
-#     l -= 1
-# print(rStr)
+def concatStrs(str1, str2):
+    str3 = str1 + " " + str2
+    return str3
+str1 = "Hello"
+str2 = "World"
+#print(concatStrs(str1, str2))
 
 
 
+# input a string print one by one charcter reverse
+def reverseStr():
+    str = input("Enter a String: ")
+    print(str[::-1])
+    reverseStr = []
+    l = len(str) - 1
+    while l >= 0:
+        reverseStr.append(str[l])
+        l -= 1
+    return reverseStr
+#print(reverseStr())
 
-# input two string and find a subString
-# str1 = "Hello world how are you"
-# str2 = "Hi guys what's going on"
-# print(str1.find("gjgh"))
-# print(str2.find("H"))
+
+
+
+#find a subString from given string
+def findSubStr(str, find):
+    foundValue = str.find(find)
+    return foundValue
+str = "Hello world how are you"
+find = "a"
+#print(findSubStr(str, find))
 
 
 # cractor friquency
-# a = "google.com"
-# b = {}
-# for i in a:
-#     if(b.get(i) == None):
-#         b[i] =  a.count(i) 
-# print(b)
+def charFrequency(str):
+    dict = {}
+    for i in str:
+        if(dict.get(i) == None):
+            dict[i] =  str.count(i) 
+    return dict
+#str = input("Enter a string: ")
+#print(charFrequency(str))
+
 
 def charFreq(str):
     str = input("Input a string: ")
@@ -50,13 +60,6 @@ def charFreq(str):
 
 
 # List lstrip
-l = [12, 20, 30, 40, 50, 60, 70]
-t = 3
-for i in range(t):
-    fv = l.pop(0)
-    l.append(fv)
-#print(l)
-
 def lstrip(l, howOften):
     t = howOften
     for i in range(t):
