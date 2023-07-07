@@ -1,14 +1,21 @@
 # Binary File Opration
 
-import pickle
+import pickle   #nimport pickle module
 
-# list = [10, 20, 30, 40, 50, 60]
-# with open("test.dat", "ab") as f:
-#     pickle.dump(list, f)
-  
-# with open("test.dat", "rb") as f:  
-#     l1 = pickle.load(f)
-#     print(l1)
+# appending binary file
+def appendFile(fName, appendValue):
+    with open(fName, "ab") as f:       # ab means append binary. f is a var name
+        pickle.dump(appendValue, f)
+# with-open no need to close file
+fileName = "test.dat"
+list1 = [10, 20, 30, 40, 50, 60]
+appendFile(fileName, list1)        
+
+
+# Read binary file
+with open("test.dat", "rb") as f:  
+    l1 = pickle.load(f)
+    print(l1)
     
     
 # open a jpg in binary mode
