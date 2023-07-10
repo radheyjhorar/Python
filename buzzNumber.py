@@ -1,6 +1,5 @@
-a = int(input("Enter a Number: "))
-b = a
-if a % 7 == 0 or a % 10 == 7:
-    print(a," Is a Buzz Number")
+num = int(input("Enter a Number: "))
+if num % 7 == 0 or num % 10 == 7:
+    print(str(num) + " Is a Buzz Number")
 else:
-    print(a, " Is not a Buzz Number")
+    print(str(num) + " Is not a Buzz Number")
