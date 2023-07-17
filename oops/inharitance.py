@@ -13,8 +13,33 @@ class Child(Parent):
         
 obj1 = Child()
 
-obj1.func1()
-obj1.func2()
+# obj1.func1()
+# obj1.func2()
+
+
+class A:
+    # num1 = int(input("Enter first number: "))
+    # num2 = int(input("Enter second number: "))
+    
+    def add(self):
+        print("Addition",self.num1+self.num2)
+    def sub(self):
+        print("Substraction",self.num1-self.num2)
+        
+class B(A):
+    
+    def multi(self):
+        print("Multiplication: ",self.num1*self.num2)
+    def div(self):
+        print("Devision: ",self.num1/self.num2)
+    def rem(self):
+        print("Remainder: ",self.num1%self.num2)
+
+
+# objb = B()
+# objb.add()
+# objb.sub()
+
 
 
 
@@ -34,5 +59,24 @@ class Hisfriend(Myfriend):
         print("My Friend's name is:", self.name2)
         print("My Friend's friend name is:", self.name3)
     
-obj1 = Hisfriend()
-obj1.print_name()
+# obj1 = Hisfriend()
+# obj1.print_name()
+
+
+class Father:
+    fname = "Ranjeet "
+    surName = "Singh "
+    
+class Son(Father):
+    sname = "Ravikant "        
+        
+class GSon(Son):
+    gsname = "Ravi "
+    
+    def show(self):
+        print("Father's Full Name: ",self.fname+self.surName)
+        print("Son's Full Name: ",self.sname+self.surName)
+        print("Grand Son's Full Name: ",self.gsname+self.surName)
+        
+obj = GSon()
+obj.show()
