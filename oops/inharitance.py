@@ -78,5 +78,41 @@ class GSon(Son):
         print("Son's Full Name: ",self.sname+self.surName)
         print("Grand Son's Full Name: ",self.gsname+self.surName)
         
-obj = GSon()
-obj.show()
+# obj = GSon()
+# obj.show()
+
+
+class Animal:
+    name = ""
+    
+    def eat(self):
+        print("I can eat")
+        
+class Dog(Animal):
+    
+    def eat(self):
+        self.eat()
+        print("I like to eat Bones")
+        
+# labradog = Dog()
+
+# labradog.eat()
+
+
+
+
+# Method Resolution Order (MRO) in Python
+
+class SuperClass1:
+    def info(self):
+        print("Super class 1 method called")
+        
+class SuperClass2:
+    def info(self):
+        print("Super class 2 method called")
+        
+class Derived(SuperClass1, SuperClass2):
+    pass
+
+d1 = Derived()
+d1.info()

@@ -24,6 +24,23 @@ class Third_class(First_class, Second_class):
 # thirdClassObj.addIntStr()
 
 
+class Mammal:
+    def mammal_info(self):
+        print("Mammals can give direct birth.")
+
+class WingedAnimal:
+    def winged_animal_info(self):
+        print("Winged animals can flap.")
+        
+class Bat(Mammal, WingedAnimal):
+    pass
+
+b1 = Bat()
+
+b1.mammal_info()
+b1.winged_animal_info()
+
+
 class Polygon:
     def __init__(self, no_of_sides):
         self.n = no_of_sides
@@ -50,8 +67,8 @@ class Triangle(Polygon):
         
 t = Triangle()
 
-t.inputSides()
-t.dispSides()
-t.findArea()
+# t.inputSides()
+# t.dispSides()
+# t.findArea()
         
 
